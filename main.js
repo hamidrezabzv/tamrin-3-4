@@ -35,7 +35,7 @@ function setInfo(data) {
   cityOutput.innerHTML = `${cityName} : نام شهر `;
   descOutput.innerHTML = `${description} : توضیحات`;
   tempOutput.innerHTML = `دمای هوا : ${converttToCel(temp)}`;
-  windOutput.innerHTML = `${wind} km/h  : سرعت باد`;
+  windOutput.innerHTML = `${wind} m/s  : سرعت باد`;
 }
 
 addInput.addEventListener("click", GetWeather);
