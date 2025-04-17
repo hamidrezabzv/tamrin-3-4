@@ -1,0 +1,125 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/bg7.jpg);
+    background-size: cover;
+    height: 100vh; /* اضافه کردن این خط */
+    margin: 0; /* حذف حاشیه پیش‌فرض */
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    height: 600px;
+}
+
+/*left section*/
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(img/header.jpg);
+    background-size: cover;
+    flex: 1;
+}
+
+.left h3{
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.left h5{
+    font-size:larger;
+}
+
+
+/*right section*/
+.right{
+    background-color: rgb(49, 49, 49);
+    flex: 1.5;
+    max-width: 100%;
+}
+
+section .rightIn{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+section .rightInUp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    flex: 1;
+}
+
+input[type="submit"] {
+    height: 3.5rem;
+    width: 6.5rem;
+    background: #16a864;
+    font-weight: bold;
+    color: ghostwhite;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 2px;
+}
+
+section .button:active {
+    opacity: 0.5; /* کمرنگ شدن */
+}
+
+section .input{
+    width: 400px;
+    text-align: right;
+    height: 60px;
+    background-color: rgb(49, 49, 49);
+    border: none;
+    border-bottom: 1px solid rgb(22, 168, 100);
+    font-family: 'Cairo',sans-serif;
+    font-size: 20px;
+    color: rgb(22, 168, 100);
+    font-weight: bold;
+
+}
+
+section input:active {
+    border-bottom: none; /* حذف حاشیه زیر */
+    border: 2px solid white; /* حاشیه سفید دور */
+}
+
+section .rightInDown{
+    display: flex;
+    flex-direction: column;
+    flex: 1.5;
+    text-align: center;
+    color: #16a864;
+}
+ 
+.rightInDown p{
+    text-align: center;
+    margin:15px 0;
+    font-size:18px;
+  }
+
+
+
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column; /* تغییر چیدمان به عمودی */
+        height: auto; /* ارتفاع خودکار */
+    }
+
+    .left, .right {
+        width: 100%; /* عرض 100% */
+    }
+}
+
